@@ -4,9 +4,6 @@ Wavelet-based Temporal Attention Improves Traffic Forecasting
 
 ![model architecture](fig/architecture.png)
 
-# References
-
-
 # Requirements
 
 + python >= 3.5
@@ -73,8 +70,7 @@ The calculation uses CPU, which should be prepared for enough computation resour
   ```shell   
   python train_DSTAGNN.py --config configurations/PEMS04_dstagnn.conf   
   ```
-
-
+  
 # Configuration
 
 The configuration file config.conf contains two parts: Data, Training:
