@@ -21,7 +21,7 @@ Wavelet-based Temporal Attention Improves Traffic Forecasting
 W-DSTAGNN is implemented on these public traffic datasets.
 - **PEMSBAY** from [DCRNN (ICLR-18)](https://github.com/liyaguang/DCRNN)
 - **PEMS03**, **PEMS04** from [STSGCN (AAAI-20)](https://github.com/Davidham3/STSGCN)
-All datasets can be found in .npz format with the only key being 'data' in [this folder](data). The shape of input traffic data should be (Total_Time_Steps, Node_Number).
+All datasets can be found in .npz format with the only key being 'data' in [Google drive](https://drive.google.com/drive/folders/17yQmHb_4rMudLTx9GcPvGiUrOrIncIHT?usp=sharing). The shape of input traffic data should be (Total_Time_Steps, Node_Number).
 
 Processing the datasets:
 
