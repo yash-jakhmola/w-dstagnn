@@ -37,7 +37,7 @@ def load_graphdata_channel1(graph_signal_matrix_filename, num_of_hours, num_of_d
     dirpath = os.path.dirname(graph_signal_matrix_filename)
 
     filename = os.path.join(dirpath,
-                            file + '_r' + str(num_of_hours) + '_d' + str(num_of_days) + '_w' + str(num_of_weeks)) +'_dstagnn'
+                            file + '_r' + str(num_of_hours) + '_d' + str(num_of_days) + '_w' + str(num_of_weeks)) +'_w-dstagnn'
 
     print('load file:', filename)
 
