@@ -234,12 +234,12 @@ class Embedding(nn.Module):
 
     def forward(self, x, batch_size):
         if self.Etype == 'T':
-            pos = torch.arange(self.nb_seq, dtype=torch.long).cuda()
+            pos = torch.arange(self.nb_seq, dtype=torch.long).to(self.DEVICE)
             pos = pos.unsqueeze(0).unsqueeze(0).expand(batch_size, self.num_of_features,
                                                    self.nb_seq)  # [seq_len] -> [batch_size, seq_len]
             embedding = x.permute(0, 2, 3, 1) + self.pos_embed(pos)
         else:
-            pos = torch.arange(self.nb_seq, dtype=torch.long).cuda()
+            pos = torch.arange(self.nb_seq, dtype=torch.long).to(self.DEVICE)
             pos = pos.unsqueeze(0).expand(batch_size, self.nb_seq)
             embedding = x + self.pos_embed(pos)
         Emx = self.norm(embedding)
@@ -273,7 +273,7 @@ class DSTAGNN_block(nn.Module):
         self.tanh = nn.Tanh()
         self.relu = nn.ReLU(inplace=True)
 
-        self.adj_pa = torch.FloatTensor(adj_pa).cuda()
+        self.adj_pa = torch.FloatTensor(adj_pa).to(DEVICE)
 
         self.pre_conv = nn.Conv2d(num_of_timesteps, d_model, kernel_size=(1, num_of_d))
 
