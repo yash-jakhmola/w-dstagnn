@@ -108,9 +108,11 @@ The configuration file config.conf contains two parts: Data, Training:
 
 If you find this repository useful in your research, please cite the following paper:
 ```
-@inproceedings{wdstagnn,
-  title={Wavelet-based Temporal Attention Improves Traffic Forecasting},
-  author={Jakhmola, Yash and Kumar Mishra, Nitish and Ghosh, Kripabandhu and Chakraborty, Tanujit},
-  year={2024}
+@article{jakhmola2024spatiotemporal,
+  title={Spatiotemporal Forecasting of Traffic Flow using Wavelet-based Temporal Attention},
+  author={Jakhmola, Yash and Panja, Madhurima and Mishra, Nitish Kumar and Ghosh, Kripabandhu and Kumar, Uttam and Chakraborty, Tanujit},
+  journal={IEEE Access},
+  year={2024},
+  publisher={IEEE}
 }
 ```
